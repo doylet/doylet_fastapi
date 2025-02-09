@@ -24,19 +24,19 @@ def get_weather(data: WeatherRequest):
 
 
 # OpenAI tool definition for function calling
-@app.get("/openapi.json")
-def openapi_schema():
-    return {
-        "name": "weather_tool",
-        "description": "Get weather info for a location",
-        "parameters": {
-            "type": "object",
-            "properties": {
-                "location": {
-                    "type": "string",
-                    "description": "City name to fetch weather for"
-                }
-            },
-            "required": ["location"]
-        }
-    }
+# @app.get("/openapi.json")
+# def openapi_schema():
+#     return {
+#         "name": "weather_tool",
+#         "description": "Get weather info for a location",
+#         "parameters": {
+#             "type": "object",
+#             "properties": {
+#                 "location": {
+#                     "type": "string",
+#                     "description": "City name to fetch weather for"
+#                 }
+#             },
+#             "required": ["location"]
+#         }
+#     }
